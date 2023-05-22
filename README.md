@@ -3,7 +3,11 @@
 19200 baud, inverted rx/tx
 ## Description
 RM Toolkit's System view tab data except Mainboard serial number
-## Protocol
+## Request protocol
+```
+0xAA 0x07 0x14 0x01 0x00 0x00 0x39
+```
+## Response protocol
 Byte index|Example bytes (hex)|Description|Value length|Value type|Scale
 ----------|-------------------|-----------|------------|----------|-----
 0|aa|Preamble (fix 0xAA)|1 byte|fix|-
